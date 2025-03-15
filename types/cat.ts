@@ -2,7 +2,7 @@ export interface Cat {
     id: string;
     name: string;
     description: string;
-    temperament: string;
+    life_span: string;
     origin: string;
     image?: {
       url: string;
