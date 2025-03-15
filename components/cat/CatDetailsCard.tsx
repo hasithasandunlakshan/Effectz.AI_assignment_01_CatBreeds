@@ -1,10 +1,10 @@
 import React from 'react'
 import { Card } from "@/components/ui/card";
+import { Cat } from '@/types/cat';
 
-import { Cat } from "@/types/Cat";
-export default function catCard({cat}: {cat: Cat}) {
+export default function catDetailsCard({cat}: {cat: Cat}) {
   return (
-    <Card key={cat.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <Card key={cat.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300 w-[400px]">
               <div className="aspect-w-16 aspect-h-9">
                 {cat.image?.url ? (
                   <img
