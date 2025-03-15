@@ -116,13 +116,22 @@ export default function CatCategoriesSection() {
             {/* Cat names grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {cats.map((cat) => (
-                <div
-                  key={cat.id}
-                  onClick={() => handleCatSelect(cat)}
-                  className="bg-white p-5 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-yellow-100 hover:border-yellow-300"
-                >
-                  <h2 className="text-lg font-semibold text-gray-900 text-center">{cat.name}</h2>
-                </div>
+         <div
+         key={cat.id}
+         onClick={() => handleCatSelect(cat)}
+         className="bg-white p-5 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-yellow-100 hover:border-yellow-300 flex items-center justify-between"
+       >
+         <h2 className="text-lg font-semibold text-gray-900 text-center flex-1">{cat.name}</h2>
+         <svg
+           className="w-5 h-5 text-gray-600 hover:text-yellow-500 transition-colors duration-300"
+           fill="none"
+           stroke="currentColor"
+           viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg"
+         >
+           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+         </svg>
+       </div>
               ))}
             </div>
 
