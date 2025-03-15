@@ -2,7 +2,9 @@
 
 A modern Next.js application that showcases different cat breeds using The Cat API. Built with TypeScript, Tailwind CSS, and shadcn/ui components.
 
-![Cat Breeds Explorer](https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&h=400&q=80)
+![image](https://github.com/user-attachments/assets/d700a31e-cb5e-4af8-891e-84a9ff4ef3f9)
+![image](https://github.com/user-attachments/assets/37fe2e54-08d4-45a5-844f-9e6a7601b753)
+![image](https://github.com/user-attachments/assets/675fced9-b8dd-44f0-9a2d-fb80cd7ea2af)
 
 ## Features
 
@@ -59,9 +61,21 @@ This project uses [The Cat API](https://thecatapi.com/) to fetch cat breed infor
 ├── app/
 │   └── page.tsx        # Main page component
 ├── components/
+│   ├── cat/            # Cat-related components
+│   │   ├── CatCategories/
+│   │   │   └── CatCategories.tsx
+│   │   └── CatDetailsCard.tsx
+│   ├── Footer/
+│   │   └── Footer.tsx
+│   ├── HomePage/
+│   │   ├── Button.tsx
+│   │   └── Hero.tsx
 │   └── ui/            # UI components from shadcn/ui
+│       └── card.tsx
 ├── public/            # Static assets
-└── README.md         # Project documentation
+│   └── images/
+│       └── BackGround.jpg
+└── README.md          # Project documentation
 ```
 
 ## Technologies Used
