@@ -14,7 +14,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg text-yellow-300">
           Welcome to Cat Breeds
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md text-gray-100 mb-10">
+        <p className="text-xl md:text-2xl  max-w-2xl mx-auto drop-shadow-md text-gray-100 mb-16">
           Discover fascinating felines from around the world and find your perfect companion.
         </p>
 
